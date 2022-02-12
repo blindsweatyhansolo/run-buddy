@@ -1,0 +1,54 @@
+/* NOTES 
+predence: ID > CLASS > ELEMENTS
+source order: last declared style has precedence
+adding !important to the end of a property will override any conflicts (not recommended)
+inheritance: if a style isn't specified for child element, will use style specified for parent element
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* adding this will override the default browser stylings, in this case the margins
+    and padding among elements for a "flush" look */
+}
+
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+    }
+
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+    /* using display: inline changes the element from the default block display
+    (using 100% of browser parent width, block elements force everything to a separate line)
+    this allows for lining elements horizontally */
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
