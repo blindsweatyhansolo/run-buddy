@@ -8,6 +8,10 @@ inheritance: if a style isn't specified for child element, will use style specif
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* box-sizing determines how to calculate width and height of each element, content-size is default
+    calculates height and width by only counting the content box of the box model,
+    border-box calculates height and width by including border and padding to the content */
     /* adding this will override the default browser stylings, in this case the margins
     and padding among elements for a "flush" look */
 }
@@ -51,4 +55,27 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: #024e76;    
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
 }
