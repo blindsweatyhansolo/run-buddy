@@ -12,10 +12,10 @@
     <header>
         <h1>
             <a href="/">
-                    RUN BUDDY
+                RUN BUDDY
             </a>
             <!-- "/" will cause a jump back to the topmost specified directory
-                if not specified then index.html -->
+                if nothing is specified then index.html is default -->
         </h1>
         <nav>
             <ul>
@@ -36,10 +36,10 @@
         </nav>
     </header>
 
-        <!--HERO/JUMBOTRON commonly refers to large image at top, large banners-->
+    <!--HERO/JUMBOTRON commonly refers to large image at top, large banners-->
     <section class="hero">
         <div class="hero-form">
-            <h3> Get Started Today! </h3>
+            <h3> Get Started Today</h3>
             <p>Fill out this form and one of our trainers will schedule a consult.</p>
             <form>
                 <label for="name">Enter full name:</label>
@@ -58,7 +58,7 @@
                 </p>
                 <p>
                     <label for="checkbox">
-                        I acknowledge that I am at least 18 years of age
+                        I acknowledge that I am at least 18 years of age.
                     </label>
                     <input type="checkbox" name="checkpoint1" id="checkbox" />
                 </p>
@@ -72,7 +72,10 @@
     <section id="what-we-do" class="intro">
         <h2 class="section-title primary-border">What We Do</h2>
         <p>
-            butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+            butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue
+            Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin
+            fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz
+            sustainable Intelligentsia umami deep v craft
         </p>
     </section>
         
@@ -82,6 +85,7 @@
         <div>
             <img src="./assets/images/step-1.svg" alt="" />
             <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+                <!-- use <span> to highlight inline content -->
             <p>You're already here, so why not?</p>
         </div>
 
@@ -105,8 +109,50 @@
 
     </section>
         
-    <section id="your-trainers">
-        <h2>Meet The Trainers</h2>
+    <section id="your-trainers" class="trainers">
+        <h2 class="section-title primary-border">Meet The Trainers</h2>
+        
+        <article class="trainer">
+            <!-- using article instead of just div helps show that all content is related to itself and nothing outside the element,
+            (self-contained) intended to be independently reusable (syndication) useful for screen readers to recognize a block of
+            content to be related and grouped within itself (ex: blog entry, news article, user-submitted content)-->
+            <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron." />
+            <!-- alt value should be less than 140 characters, convey content and purpose, avoid using "image/graph of.."
+            because screen readers already provide that info -->
+            <div class="trainer-bio text-left">
+                <h3>Arron Stephens</h3>
+                <h4>Speed / Strength</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saeoe culpa sed
+                    itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                </p>
+            </div>
+        </article>
+        
+        <article class="trainer">
+            <div class="trainer-bio text-right">
+                <h3>Joanna Gill</h3>
+                <h4>Endurance</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saeoe culpa sed
+                    itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat! 
+                </p>
+            </div>
+            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+        </article>
+
+        <article class="trainer">
+            <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+            <div class="trainer-bio text-left">
+                <h3>Harry "The Headband" Smith</h3>
+                <h4>Strength</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saeoe culpa sed
+                    itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                </p>
+            </div>
+
+        </article>
     </section>
         
     <section id="reach-out">
@@ -115,11 +161,12 @@
 
     <footer>
         <h2>❤️ Made with love by Run Buddy.</h2>
-            <div>
-                <a href="#">Read Our Privacy Policy</a><br />
-                &copy; 2019 Run Buddy, Inc.
-                <!-- &copy; an "entity" (starts with &), creates a copyright symbol! -->
-            </div>
+        <div>
+            <a href="#">Read Our Privacy Policy</a><br />
+            &copy; 2019 Run Buddy, Inc.
+            <!-- &copy; an "entity" (starts with &), creates a copyright symbol! -->
+        </div>
     </footer>
 </body>
+
 </html>
