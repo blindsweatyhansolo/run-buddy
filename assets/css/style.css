@@ -102,6 +102,10 @@ section {
     bottom: 120px;
     right: 140px;
 }
+/* absolute positioning removes the element from the document flow to be placed in a 
+specific place. REMEMBER: if you want an elements position to be absolute, you must first
+declare its parent's position to be relative, to make sure it is relative to the parent and
+not relative to the entire window*/
 
 .hero-form h3 {
     font-size: 24px;
@@ -242,3 +246,25 @@ section {
     text-align: right;
 }
 
+.contact {
+    text-align: center;
+    background-color: #024e76;
+}
+
+.contact h2 {
+    color: #fce138;
+}
+
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+}
+
+.contact-info div {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
