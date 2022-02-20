@@ -45,9 +45,17 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* header nav ul li {
     display: inline;
-    /* using display: inline changes the element from the default block display
+    using display: inline changes the element from the default block display
     (using 100% of browser parent width, block elements force everything to a separate line)
     this allows for lining elements horizontally */
 }
@@ -55,7 +63,8 @@ header nav ul li {
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
+    /* vw = viewport width */
 }
 
 footer {
