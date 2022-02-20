@@ -90,6 +90,7 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
+    
 }
 
 .hero-form {
@@ -101,6 +102,7 @@ section {
     position: absolute;
     bottom: 120px;
     right: 140px;
+    border-radius: 25px;
 }
 /* absolute positioning removes the element from the document flow to be placed in a 
 specific place. REMEMBER: if you want an elements position to be absolute, you must first
@@ -284,4 +286,14 @@ not relative to the entire window*/
 
 .contact-info a {
     color: #fce138;
+}
+
+.hero-cta h1 {
+    color: #fce138;
+    font-style: italic;
+}
+
+.hero-cta p {
+    color: white;
+    text-align: right;
 }
