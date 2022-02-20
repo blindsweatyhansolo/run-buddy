@@ -239,49 +239,45 @@ section {
     border-color: #39a6b2;
 }
 
-/*
 .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 } 
-*/
 
 .trainer {
-    width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 20px;
     background: #024e76;
     color: #fce138;
-    overflow: auto;
-    /* overflow is used when an element's content is too big to fit in its block formatting context (BFC), by using this
-    it helps create a new BFC that contains the float, by acting as a way to inform the <article> element about the context
-    within, causing the parent element to become a mini-layout within the full layout */
+    flex: 1;
 }
 
 .trainer img {
-    width: 35%;
-    float: left;
+    width: 100%;
 }
 
 .trainer-bio {
-    padding: 35px;
-    float: left;
-    width: 65%;
+    padding: 25px;
+    line-height: 1.3;
 }
 
 .trainer-bio h3 {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 28px;
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
-    font-size: 26px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .trainer-bio p {
     font-size: 17px;
-    line-height: 1.3;
 }
 
+/*
 .text-left {
     text-align: left;
 }
@@ -289,6 +285,7 @@ section {
 .text-right {
     text-align: right;
 }
+*/
 
 .contact {
     background-color: #024e76;
