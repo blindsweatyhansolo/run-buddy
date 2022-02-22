@@ -536,12 +536,8 @@ section {
     .step-text {
         flex: 100%;
     }
-<<<<<<< HEAD
-    .trainer-bio h3, .trainer-bio h4 {
-=======
     .trainer-bio h3,
     .trainer-bio h4 {
->>>>>>> develop
         display: block;
     }
 }
